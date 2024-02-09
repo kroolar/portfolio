@@ -1,5 +1,5 @@
 import React from "react"
-import { Tag } from "../../components"
+import { Section, Tag } from "../../components"
 
 const SKILLS = [
   "HTML", "CSS", "SASS", "TailwindCSS", "React", "Responsive Design", "Ruby",
@@ -8,11 +8,9 @@ const SKILLS = [
 ]
 
 const Skills = () => (
-  <div>
-    <h2 className="font-medium mt-16 mb-4">SKILLS</h2>
-
+  <Section title="SKILLS">
     {SKILLS.map(skill => <Tag key={skill} text={skill} />)}
-  </div>
+  </Section>
 )
 
 export default Skills

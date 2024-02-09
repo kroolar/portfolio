@@ -9,7 +9,7 @@ const MENU_ITEMS = [
 ]
 
 const Menu = () => (
-  <div className="flex justify-around mb-16">
+  <div className="flex justify-around mb-16 sm:mb-32">
     {MENU_ITEMS.map(item => (
       <Link
         key={item}

@@ -1,15 +1,13 @@
 import React from "react"
-import { Icon } from "../../components"
+import { Icon, Link, Section } from "../../components"
 
 const Contact = () => (
-  <div>
-    <h2 className="font-medium mt-16 mb-4">CONTACT</h2>
-      
+  <Section title="CONTACT">
     <div className="flex">
       <Icon className="h-10 w-10 text-stone-300 rounded-sm border-0 border-stone-300 flex items-center justify-center !text-4xl" icon="article" />
       <div className="ml-3 leading-none flex-col justify-center mt-1">
         <div className="font-medium">Medium</div>
-        <div className="text-stone-400">https://medium.com/@kroolar</div>
+        <Link className="text-stone-400" href="https://medium.com/@kroolar" text="@kroolar" />
       </div>
     </div>
 
@@ -17,10 +15,15 @@ const Contact = () => (
       <Icon className="h-10 w-10 text-stone-300 rounded-sm border-0 border-stone-300 flex items-center justify-center !text-4xl" icon="mail" />
       <div className="ml-3 leading-none flex-col justify-center mt-1">
         <div className="font-medium">Email</div>
-        <div className="text-stone-400">kroolar@gmail.com</div>
+
+        <Link
+          className="text-stone-400"
+          href="mailto:kroolar@gmail.com"
+          text="kroolar@gmail.com"
+        />
       </div>
     </div>
-  </div>
+  </Section>
 )
 
 export default Contact
