@@ -23,7 +23,7 @@ const About = () => (
 
       <Button href="mailto:kroolar@gmail.com">
         <Icon className="!text-2xl !leading-none mr-2" icon="handshake" />
-        <Text text="Say Hello!" />
+        <Text text="Say Hello" />
       </Button>
     </Section>
   </div>

@@ -3,7 +3,7 @@ import { Section, Tag } from "../../components"
 
 const SKILLS = [
   "HTML", "CSS", "SASS", "TailwindCSS", "React", "Responsive Design", "Ruby",
-  "Ruby on Rails", "Docker", "Git", "Wordpress", "Shopify", "Linux",
+  "Ruby on Rails", "Docker", "Git", "Nginx", "Linux",
   "Azure DevOps"
 ]
 

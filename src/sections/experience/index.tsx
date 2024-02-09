@@ -8,15 +8,15 @@ const EXPERIENCE = [
     link: "https://www.calligo.io/",
     dates: "2020 - Present",
     title: "Full Stack Ruby on Rails Developer",
-    description: "Development and maintenance of an ."
+    description: "Developing existing and creating new internal systems that improve company processes."
   },
   {
     icon: "add_reaction",
     company: "Vybbe",
     link: "https://www.vybbe.com/",
     dates: "2019 - 2020",
-    title: "Full Stack Ruby on Rails Developer",
-    description: "Development and ."
+    title: "Full Stack RoR Developer",
+    description: "Working in a small team in the startup where we built and implemented an internal product from scratch."
   },
   {
     icon: "explore",
@@ -24,7 +24,7 @@ const EXPERIENCE = [
     link: "/",
     dates: "2018 - Present",
     title: "Full Stack Ruby on Rails Developer",
-    description: "Development and maintenance of an internal product for managing processes in the company."
+    description: "Creating websites, maintenance hosting and domains, building online stores, blogs, CMSs, APIs, scripts and many more..."
   }
 ]
 
@@ -33,12 +33,12 @@ const Experience = () => (
     {EXPERIENCE.map(({ icon, company, link, dates, title, description }) => (
       <div key={title} className="flex flex-col mb-10 sm:flex-row">
         <div className="flex leading-none sm:w-1/2">
-          <Icon className="mr-4 text-4xl" icon={icon} />
+          <Icon className="mr-4 text-4xl text-stone-300" icon={icon} />
 
           <div className="mb-4 mt-1">
             <Link href={link} text={company} />
 
-            <div className="text-stone-400">{dates}</div>
+            <div className="text-stone-400 mt-px">{dates}</div>
           </div>
         </div>
 
@@ -47,7 +47,7 @@ const Experience = () => (
             {title}
           </div>
 
-          <div className="text-stone-400 font-light w-full">
+          <div className="text-stone-400 font-base w-full text-justify">
             {description}
           </div>
         </div>
