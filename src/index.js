@@ -7,7 +7,7 @@ import {
   Menu,
   Skills
 } from "./sections"
-import "./index.css"
+import "./index.scss"
 
 const root = ReactDOM.createRoot(document.getElementById("root"))
 
