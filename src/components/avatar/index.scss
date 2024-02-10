@@ -1,0 +1,28 @@
+.avatar {
+  border-radius: 100%;
+
+  &--xs {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  &--sm {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  &--md {
+    width: 6rem;
+    height: 6rem;
+  }
+
+  &--lg {
+    width: 8rem;
+    height: 8rem;
+  }
+
+  &--xl {
+    width: 10rem;
+    height: 10rem;
+  }
+}
