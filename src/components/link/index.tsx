@@ -1,22 +1,31 @@
 import React from "react"
+import { Size } from "../../types"
 
 type Props = {
   className?: string
   href: string
+  render?: boolean
+  size?: Size
   text: string
 }
 
 const Link = ({
-  className,
+  className = "",
   href,
+  render = true,
+  size = "md",
   text
-}: Props) => (
-  <a
-    href={href}
-    className={`inline-flex duration-200 hover:text-rose-500 border-b border-rose-500 border-opacity-0 hover:border-opacity-100 text-stone-300 ${className}`}
-  >
-    {text}
-  </a>
-)
+}: Props) => {
+  if (!render) return null
+
+  return (
+    <a
+      href={href}
+      className={`link link--${size} ${className}`}
+    >
+      {text}
+    </a>
+  )
+}
 
 export default Link

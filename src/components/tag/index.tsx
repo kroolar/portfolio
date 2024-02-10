@@ -1,15 +1,26 @@
 import React from "react"
+import { Size } from "../../types"
 
 type Props = {
+  className?: string
+  render?: boolean
+  size?: Size
   text: string
 }
 
 const Tag = ({
+  className = "",
+  render = true,
+  size = "md",
   text
-}: Props) => (
-  <div className="border border-stone-400 text-stone-400 inline-flex p-2 leading-none mr-3 rounded-sm mb-3">
-    {text}
-  </div>
-)
+}: Props) => {
+  if (!render) return null
+
+  return (
+    <div className={`tag tag--${size} ${className}`}>
+      {text}
+    </div>
+  )
+}
 
 export default Tag

@@ -1,5 +1,4 @@
 import React from "react"
-import "./index.scss"
 import { Size } from "../../types"
 
 type Props = {

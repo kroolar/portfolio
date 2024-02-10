@@ -1,0 +1,48 @@
+.button {
+  border: solid $stone-300;
+  color: $stone-300;
+  cursor: pointer;
+  display: inline-flex;
+  transition-duration: 200ms;
+
+  &:hover {
+    border-color: $rose-500;
+    color: $rose-500;
+  }
+
+  &--xs {
+    border-radius: 1px;
+    border-width: 1px;
+    font-size: .6rem;
+    padding: .3rem .5rem;
+  }
+
+  &--sm {
+    border-radius: 1px;
+    border-width: 1px;
+    font-size: .8rem;
+    padding: .4rem .6rem;
+  }
+
+  &--md {
+    border-radius: 2px;
+    border-width: 2px;
+    font-size: 1rem;
+    padding: .5rem .7rem;
+  }
+
+  &--lg {
+    border-radius: 2px;
+    border-width: 2px;
+    font-size: 1.2rem;
+    padding: .6rem .8rem;
+  }
+
+  &--xl {
+    border-radius: 3px;
+    border-width: 3px;
+    font-size: 1.4rem;
+    padding: .7rem .9rem;
+  }
+}
+
