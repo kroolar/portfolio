@@ -1,7 +1,7 @@
 import Component from "./"
 
 export default {
-  title: "Tag",
+  title: "Box",
   component: Component
 }
 
