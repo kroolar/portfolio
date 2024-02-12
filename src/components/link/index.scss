@@ -1,14 +1,13 @@
 .link {
   border-bottom: 2px solid rgba(244, 63, 94, 0); // rose-500
-  color: $stone-300;
   cursor: pointer;
   display: inline-flex;
   line-height: 1;
   transition-duration: 200ms;
 
   &:hover {
-    color: $rose-500;
     border-bottom-color: rgba(244, 63, 94, 1);
+    color: $red;
   }
 
   &--xs {
