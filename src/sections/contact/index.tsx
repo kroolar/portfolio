@@ -1,5 +1,5 @@
 import React from "react"
-import { Icon, Link, Section } from "../../components"
+import { Box, Icon, Link, Section, Text } from "../../components"
 
 const CONTACTS = [
   {
@@ -23,15 +23,16 @@ const CONTACTS = [
 ]
 
 const Contact = () => (
-  <Section title="CONTACT">
+  <Section clasName="mb-20" title="CONTACT">
     {CONTACTS.map(({ icon, title, text, href}) => (
-      <div key={title} className="flex mb-2">
-        <Icon className="h-10 w-10 text-stone-300 rounded-sm border-0 border-stone-300 flex items-center justify-center !text-4xl" icon={icon} />
-        <div className="ml-3 leading-none flex-col justify-center mt-1">
-          <div className="font-medium">{title}</div>
-          <Link className="text-stone-400" href={href} text={text} />
-        </div>
-      </div>
+      <Box key={title} className="flex items-center mb-3">
+        <Icon icon={icon} size="sm" />
+
+        <Box className="ml-3 leading-none flex-col justify-center mt-1">
+          <Text text={title} weight="lg" />
+          <Link brightness="sm" href={href} text={text} />
+        </Box>
+      </Box>
     ))}
   </Section>
 )

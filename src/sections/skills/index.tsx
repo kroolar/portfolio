@@ -8,12 +8,14 @@ const SKILLS = [
 ]
 
 const Skills = () => (
-  <Section title="SKILLS">
+  <Section clasName="mb-20" title="SKILLS">
     {SKILLS.map(skill => (
       <Tag
+        brightness="sm"
         className="mr-3 mb-3"
         key={skill}
         text={skill}
+        weight="sm"
       />
     ))}
   </Section>

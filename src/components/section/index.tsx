@@ -1,5 +1,5 @@
 import React from "react"
-import { Text } from "../"
+import { Box, Text } from "../"
 
 type Props = {
   title: string
@@ -9,14 +9,19 @@ type Props = {
 
 const Section = ({
   title,
-  clasName,
+  clasName = "",
   children
 }: Props) => (
-  <section className={`mb-16 ${clasName}`}>
-    <Text className="mb-2" id={title} text={title} size="lg" />
+  <Box className={clasName}>
+    <Text
+      className="mb-2"
+      id={title}
+      text={title}
+      size="lg"
+    />
 
     {children}
-  </section>
+  </Box>
 )
 
 export default Section

@@ -1,15 +1,15 @@
 import Component from "./"
 
-const meta = {
+export default {
   title: "Section",
-  component: Component,
+  component: Component
 }
-
-export default meta
 
 export const Primary = {
   args: {
-    checked: true,
-    icon: "check"
-  },
+    title: "Section",
+    clasName: "",
+    children: "Content"
+  }
 }
+

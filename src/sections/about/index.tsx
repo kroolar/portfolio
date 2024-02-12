@@ -1,32 +1,36 @@
 import React from "react"
-import { Avatar, Button, Icon, Section, Text } from "../../components"
+import { Avatar, Box, Button, Icon, Section, Text } from "../../components"
 
 const About = () => (
-  <div>
-    <div className="text-white flex items-center mb-10">
-      <Avatar />
+  <Box>
+    <Box className="flex flex-row items-center mb-10">
+      <Avatar className="mr-6" />
 
-      <div>
-        <div className="text-3xl font-semibold text-stone-300">Artur Krol</div>
-        <div className="text-stone-400 text-lg leading-none">Ruby on Rails Developer</div>
-      </div>
-    </div>
+      <Box>
+        <Text className="!text-3xl" size="xl" weight="lg">
+          ARTUR KROL
+        </Text>
+
+        <Text brightness="sm" size="lg">
+          RUBY ON RAILS DEVELOPER
+        </Text>
+      </Box>
+    </Box>
 
     <Section title="ABOUT">
-      <div className="text-stone-400 text-justify">
-        Hello, I am Artur and I build the web things.
-        I specialize in building websites and
-        web applications. I am currently working at Calligo but I
-        also work as a freelancer helping others solve their problems. Let me know
-        if you need any help.
-      </div>
+      <Text align="justify" brightness="sm" className="mb-6" weight="sm">
+        Hello, I am Artur and I build the web things. I specialize in building
+        websites and web applications. I currently work at Calligo but I also
+        work as a freelancer helping others solve their problems. Let me know if
+        you need any help.
+      </Text>
 
-      <Button href="mailto:kroolar@gmail.com">
-        <Icon className="!text-2xl !leading-none mr-2" icon="handshake" />
+      <Button className="mb-20" href="mailto:kroolar@gmail.com">
+        <Icon className="mr-2" icon="handshake" size="xs" />
         <Text text="Say Hello" />
       </Button>
     </Section>
-  </div>
+  </Box>
 )
 
 export default About
