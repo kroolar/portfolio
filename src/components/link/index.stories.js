@@ -15,7 +15,7 @@ export default {
     weight: {
       options: ["xs", "sm", "md", "lg", "xl"],
       control: { type: "inline-radio" }
-    },
+    }
   }
 }
 
@@ -28,6 +28,6 @@ export const Primary = {
     size: "md",
     text: "Link to",
     weight: "md"
-  },
+  }
 }
 

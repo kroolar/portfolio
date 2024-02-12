@@ -1,13 +1,16 @@
 .button {
-  border: solid $stone-300;
-  color: $stone-300;
+  border: solid;
   cursor: pointer;
   display: inline-flex;
   transition-duration: 200ms;
 
-  &:hover {
-    border-color: $rose-500;
-    color: $rose-500;
+  * {
+    transition-duration: 200ms;
+  }
+
+  &:hover, &:hover * {
+    border-color: $red;
+    color: $red;
   }
 
   &--xs {
