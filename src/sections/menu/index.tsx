@@ -1,5 +1,5 @@
 import React from "react"
-import { Link } from "../../components"
+import { Box, Link } from "../../components"
 
 const MENU_ITEMS = [
   "ABOUT",
@@ -9,15 +9,16 @@ const MENU_ITEMS = [
 ]
 
 const Menu = () => (
-  <div className="flex justify-around mb-16 sm:mb-32">
+  <Box className="flex justify-around mb-20 sm:mb-32">
     {MENU_ITEMS.map(item => (
       <Link
+        brightness="xs"
         key={item}
         href={`#${item}`}
         text={item}
       />
     ))}
-  </div>
+  </Box>
 )
 
 export default Menu

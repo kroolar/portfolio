@@ -1,6 +1,10 @@
 @import "./styles/colors.scss";
+@import "./styles/brightness.scss";
+@import "./styles/global.scss";
+@import "./styles/weight.scss";
 
 @import "./components/avatar";
+@import "./components/box";
 @import "./components/button";
 @import "./components/icon";
 @import "./components/link";
@@ -8,20 +12,3 @@
 @import "./components/tag";
 @import "./components/text";
 
-body {
-  margin: 0;
-  font-family: 'Recursive', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-  monospace;
-}
-
-* {
-  scroll-behavior: smooth;
-}

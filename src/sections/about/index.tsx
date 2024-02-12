@@ -11,7 +11,7 @@ const About = () => (
           ARTUR KROL
         </Text>
 
-        <Text brightness="sm" size="lg">
+        <Text brightness="sm" className="leading-none" size="lg">
           RUBY ON RAILS DEVELOPER
         </Text>
       </Box>
