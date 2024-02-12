@@ -1,22 +1,47 @@
 import React from "react"
+import { Size } from "../../types"
 
 type Props = {
-  id?: string
+  align?: "start" | "center" | "end" | "justify"
+  brightness?: Size
+  children?: string
   className?: string
-  text: string
-  size?: string
+  id?: string
+  render?: boolean
+  text?: string
+  size?: Size
+  weight?: Size
 }
 
 const Text = ({
+  align = "start",
+  brightness = "md",
+  children,
+  className = "",
   id,
-  className,
+  render = true,
+  size = "md",
   text,
-  size
-}: Props) => (
-  <p id={id} className={`font-medium text-${size} ${className}`}>
-    {text}
-  </p>
-)
+  weight = "md",
+}: Props) => {
+  if (!render) return null
+
+  return (
+    <p
+      className={`
+        text
+        text-${align}
+        text--${size}
+        brightness-${brightness}
+        weight-${weight}
+        ${className}
+      `}
+      id={id}
+    >
+      {text || children}
+    </p>
+  )
+}
 
 export default Text
 
