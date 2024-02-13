@@ -3,18 +3,18 @@ import { Box, Text } from "../"
 
 type Props = {
   title: string
-  clasName?: string
+  className?: string
   children: any // eslint-disable-line
 }
 
 const Section = ({
   title,
-  clasName = "",
+  className = "",
   children
 }: Props) => (
-  <Box className={clasName}>
+  <Box className={`section ${className}`}>
     <Text
-      className="mb-2"
+      className="section__text mb-2"
       id={title}
       text={title}
       size="lg"

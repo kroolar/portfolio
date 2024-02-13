@@ -8,7 +8,7 @@ export default {
 export const Primary = {
   args: {
     title: "Section",
-    clasName: "",
+    className: "",
     children: "Content"
   }
 }
