@@ -32,7 +32,7 @@ const EXPERIENCE = [
 ]
 
 const Experience = () => (
-  <Section clasName="mb-20" title="EXPERIENCE">
+  <Section className="mb-20" title="EXPERIENCE">
     {EXPERIENCE.map(({ icon, company, link, dates, title, description }) => (
       <Box className="flex flex-col mb-10 sm:flex-row" key={title}>
         <Box className="flex leading-none sm:w-1/2">

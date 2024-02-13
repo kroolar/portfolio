@@ -23,7 +23,7 @@ const CONTACTS = [
 ]
 
 const Contact = () => (
-  <Section clasName="mb-20" title="CONTACT">
+  <Section className="mb-20" title="CONTACT">
     {CONTACTS.map(({ icon, title, text, href}) => (
       <Box key={title} className="flex items-center mb-3">
         <Icon icon={icon} size="sm" />
