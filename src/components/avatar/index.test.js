@@ -22,3 +22,10 @@ test("it should change component size class", () => {
 
   expect(component).toHaveClass("avatar avatar--xl")
 })
+
+test("it should add class to the component", () => {
+  render(<Component className="bg-black" />)
+  const component = screen.getByRole("img")
+
+  expect(component).toHaveClass("avatar bg-black")
+})
