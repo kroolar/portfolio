@@ -9,7 +9,7 @@ export const Primary = {
   args: {
     title: "Section",
     className: "",
-    children: "Content"
+    children: <div className="text-stone-400">CONTENT</div>
   }
 }
 
