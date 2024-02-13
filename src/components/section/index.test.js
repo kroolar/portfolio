@@ -7,7 +7,7 @@ test("it should render component", () => {
   const component = container.querySelector(".section")
 
   expect(component).toBeDefined()
-  expect(component).toHaveClass('section')
+  expect(component).toHaveClass("section")
 })
 
 test("it should add class to the component", () => {
@@ -21,7 +21,7 @@ test("it should contain title", () => {
   const { container } = render(<Component title="Section Title"/>)
   const component = container.querySelector("p")
 
-  expect(component).toHaveTextContent('Section Title')
+  expect(component).toHaveTextContent("Section Title")
 })
 
 test("it should display child component", () => {

@@ -13,7 +13,7 @@ test("it should render component", () => {
   const component = container.querySelector(".box")
 
   expect(component).toBeDefined()
-  expect(component).toHaveClass('box')
+  expect(component).toHaveClass("box")
 })
 
 test("it should display child component", () => {

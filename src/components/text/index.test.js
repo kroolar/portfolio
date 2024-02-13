@@ -14,10 +14,10 @@ test("it should render component", () => {
   const component = container.querySelector(".text")
 
   expect(component).toBeDefined()
-  expect(component).toHaveClass('text')
+  expect(component).toHaveClass("text")
   expect(component).toHaveClass("text-start")
   expect(component).toHaveClass("text--md")
-  expect(component).toHaveClass('brightness-md')
+  expect(component).toHaveClass("brightness-md")
   expect(component).toHaveClass("weight-md")
 })
 
@@ -25,7 +25,7 @@ test("it should change component brightness", () => {
   const { container } = render(<Component brightness="xs"/>)
   const component = container.querySelector(".text")
 
-  expect(component).toHaveClass('brightness-xs')
+  expect(component).toHaveClass("brightness-xs")
 })
 
 test("it should display child component", () => {

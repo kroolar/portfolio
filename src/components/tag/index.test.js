@@ -14,9 +14,9 @@ test("it should render component", () => {
   const component = container.querySelector(".tag")
 
   expect(component).toBeDefined()
-  expect(component).toHaveClass('tag')
+  expect(component).toHaveClass("tag")
   expect(component).toHaveClass("tag--md")
-  expect(component).toHaveClass('brightness-md')
+  expect(component).toHaveClass("brightness-md")
   expect(component).toHaveClass("weight-md")
 })
 
@@ -24,7 +24,7 @@ test("it should change component brightness", () => {
   const { container } = render(<Component brightness="xs"/>)
   const component = container.querySelector(".tag")
 
-  expect(component).toHaveClass('brightness-xs')
+  expect(component).toHaveClass("brightness-xs")
 })
 
 test("it should add class to the component", () => {

@@ -1,4 +1,8 @@
 module.exports = {
+  "globals": {
+    "test": true,
+    "expect": true,
+  },
   "env": {
     "browser": true,
     "es2021": true
@@ -30,7 +34,8 @@ module.exports = {
   },
   "plugins": [
     "@typescript-eslint",
-    "react"
+    "react",
+    "jest"
   ],
   "rules": {
     "indent": [
@@ -48,6 +53,7 @@ module.exports = {
     "semi": [
       "error",
       "never"
-    ]
+    ],
+    "react/react-in-jsx-scope": 0
   }
 }

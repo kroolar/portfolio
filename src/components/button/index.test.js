@@ -14,9 +14,9 @@ test("it should render component", () => {
   const component = container.querySelector(".button")
 
   expect(component).toBeDefined()
-  expect(component).toHaveClass('button')
+  expect(component).toHaveClass("button")
   expect(component).toHaveClass("button--md")
-  expect(component).toHaveClass('brightness-md')
+  expect(component).toHaveClass("brightness-md")
   expect(component).toHaveClass("weight-md")
 })
 
@@ -24,7 +24,7 @@ test("it should change component brightness", () => {
   const { container } = render(<Component brightness="xs"/>)
   const component = container.querySelector(".button")
 
-  expect(component).toHaveClass('brightness-xs')
+  expect(component).toHaveClass("brightness-xs")
 })
 
 test("it should display child component", () => {
