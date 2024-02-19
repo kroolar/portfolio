@@ -23,9 +23,9 @@ const CONTACTS = [
 ]
 
 const Contact = () => (
-  <Section className="mb-20" title="CONTACT">
+  <Section className="contact mb-20" title="CONTACT">
     {CONTACTS.map(({ icon, title, text, href}) => (
-      <Box key={title} className="flex items-center mb-3">
+      <Box key={title} className={`contact__item--${title} flex items-center mb-3`}>
         <Icon icon={icon} size="sm" />
 
         <Box className="ml-3 leading-none flex-col justify-center mt-1">

@@ -14,7 +14,7 @@ const Section = ({
 }: Props) => (
   <Box className={`section ${className}`}>
     <Text
-      className="section__text mb-2"
+      className="section__title mb-2"
       id={title}
       text={title}
       size="lg"

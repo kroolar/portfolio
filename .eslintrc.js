@@ -1,7 +1,13 @@
 module.exports = {
   "globals": {
+    // JEST
     "test": true,
     "expect": true,
+    // CYPRESS
+    "describe": true,
+    "beforeEach": true,
+    "cy": true,
+    "it": true,
   },
   "env": {
     "browser": true,
