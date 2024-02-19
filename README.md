@@ -1,5 +1,5 @@
 # Portfolio
-### Version 1.1.0
+### Version 1.2.0
 
 ### Installation
 ```bash
@@ -27,6 +27,16 @@ yarn storybook
 - Storybook
 - Typescript
 - Jest
+- Cypress
+
+### Testing
+```bash
+# Run component tests (jest/react-testing-library)
+yarn test
+
+# Run E2E tests (cypress)
+yarn run cypress run
+```
 
 ### Deployment
 ```bash
